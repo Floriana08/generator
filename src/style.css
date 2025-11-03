@@ -1,1 +1,59 @@
+body {
+  background-color: #f9f7fe;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+h1 {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 1.5;
+  color: #272044;
+  text-align: center;
+}
 
+.poem {
+  font-size: 14px;
+  background-color: white;
+  padding: 20px;
+  line-height: 24px;
+  border-left: 3px solid #885df1;
+}
+
+.container {
+  margin: 120px auto;
+  max-width: 600px;
+}
+
+form {
+  padding: 30px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 16px;
+  border: 1px solid rgba(39, 33, 66, 0.5);
+  width: 80%;
+  font-size: 16px;
+  border-radius: 50px;
+  line-height: 20px;
+}
+
+.submit {
+  border-radius: 30px;
+  margin-left: 10px;
+  background-color: #885df1;
+  border: none;
+  padding: 14px 24px;
+  font-size: 16px;
+  color: white;
+}
+footer {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 30px;
+}
+a {
+  color: #885df1;
+}

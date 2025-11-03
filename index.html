@@ -7,30 +7,34 @@
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
-    <header>
-      <h1>AI Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of a french poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>e nel mezzo del cammin</div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of a french poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit" />
+        </form>
+        <div class="poem">e nel mezzo del cammin</div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Floriana08" target="_blank">Flo</a> and it is
-      hosted on
-      <a href="ai-generator-cd532d.netlify.app" target="_blank">Netlify</a>
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Floriana08" target="_blank">Flo</a> and it
+        is hosted on
+        <a href="ai-generator-cd532d.netlify.app" target="_blank">Netlify</a>
+      </footer>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
