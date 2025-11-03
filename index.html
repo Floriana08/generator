@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI Generator</title>
     <link rel="stylesheet" href="src/style.css" />
@@ -13,7 +14,7 @@
       </header>
 
       <main>
-        <form>
+        <form id="generator-form">
           <input
             type="text"
             placeholder="Enter the topic of a french poem"
@@ -24,7 +25,7 @@
           />
           <input type="submit" class="submit" />
         </form>
-        <div class="poem">e nel mezzo del cammin</div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
