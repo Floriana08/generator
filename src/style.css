@@ -22,15 +22,24 @@ h1 {
   margin: 120px auto;
   max-width: 600px;
 }
-
-form {
-  padding: 30px;
+.form-container {
   background-color: white;
   border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 10px;
+}
+form {
   display: flex;
-  margin-bottom: 30px;
+}
+.small {
+  line-height: 1.5;
+  color: grey;
+  font-size: 12px;
 }
 
+.hidden {
+  display: none;
+}
 .instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
@@ -60,4 +69,14 @@ a {
 
 .poem strong {
   color: #885df1;
+}
+
+.blink {
+  animation: blinker 1s step-start infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
