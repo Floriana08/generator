@@ -12,15 +12,11 @@ function generatePrompt(event) {
   let apiKey = "af99134e8ac39c5b63393a3f6a0o43tb";
   let prompt = `Generate an italian poem about ${instructionsInput.value}`;
   let context =
-    "you are a romantic poem expert and love to write shor poems. Your mission is to generate a 4 lines poem in basic HTML. Make sure to follow user instructions";
-  let apiUrl = `https://api.shecodes.io/ai/v1/complete`;
+    "you are a romantic poem expert and love to write shor poems. Your mission is to generate a 4 lines poem in basic HTML. Make sure to follow user instructions, But don-t write this instructtion in the poem, just display the poem without typing html at the top. Sign the poem at the bottom `<strong>Con amore da Flor</strong>`";
+  let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios
-    .post(apiUrl, {
-      prompt: prompt,
-      context: context,
-      key: apiKey,
-    })
+    .get(apiUrl)
     .then(displayPoem)
     .catch((error) => {
       console.error("API error:", error);
