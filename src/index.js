@@ -10,9 +10,9 @@ function generatePrompt(event) {
   event.preventDefault();
   let instructionsInput = document.querySelector("#user-instruction");
   let apiKey = "af99134e8ac39c5b63393a3f6a0o43tb";
-  let prompt = `Generate an italian poem about ${instructionsInput.value}`;
+  let prompt = `Generate a spanish poem about ${instructionsInput.value}`;
   let context =
-    "you are a romantic poem expert and love to write shor poems. Your mission is to generate a 4 lines poem in basic HTML. Make sure to follow user instructions, But don-t write this instructtion in the poem, just display the poem without typing html at the top. Sign the poem at the bottom `<strong>Con amore da Flor</strong>`";
+    "you are a romantic poem expert and love to write short poems. Your mission is to generate a 4 lines poem in basic HTML in spanish. Make sure to follow user instructions, But don-t write this instructtion in the poem, just display the poem without typing html at the top. Sign the poem at the bottom `<strong>Con amore da Flor</strong>`";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   let poemElement = document.querySelector("#poem");
